@@ -93,25 +93,25 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/ratavare/Documents/Inception/data/db_vol
+      device: /home/ratavare/Documents/aaa/data/db_vol
   wp_vol:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/ratavare/Documents/Inception/data/wp_vol
+      device: /home/ratavare/Documents/aaa/data/wp_vol
   portainer_data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/ratavare/Documents/Inception/data/portainer_data
+      device: /home/ratavare/Documents/aaa/data/portainer_data
   redis_vol:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/ratavare/Documents/Inception/data/redis_vol
+      device: /home/ratavare/Documents/aaa/data/redis_vol
 
 networks:
   inception_network:
