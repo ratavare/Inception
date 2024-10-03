@@ -60,8 +60,6 @@ services:
       - inception_network
     depends_on:
       - wordpress
-    volumes:
-      - redis_vol:/data
 
   adminer:
     build: ./bonus/adminer
@@ -106,12 +104,6 @@ volumes:
       type: none
       o: bind
       device: /home/ratavare/Documents/aaa/data/portainer_data
-  redis_vol:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/ratavare/Documents/aaa/data/redis_vol
 
 networks:
   inception_network:

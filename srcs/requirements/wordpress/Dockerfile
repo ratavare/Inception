@@ -4,7 +4,7 @@ RUN apk update
 
 RUN apk add mariadb-client php83 php83-fpm \
 	php83-mysqli php83-cgi php-phar php-mbstring \
-	php-pdo php-gd fcgi mysql-client curl wget php-curl php-sockets
+	php-pdo php-gd fcgi mysql-client curl wget php-curl php-sockets php-redis
 
 RUN adduser -S -G www-data www-data
 

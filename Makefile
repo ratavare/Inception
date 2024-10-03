@@ -1,7 +1,7 @@
 COMPOSE_FILE := srcs/docker-compose.yml
 
 up:
-	mkdir -p data/db_vol data/wp_vol data/portainer_data data/redis_vol
+	mkdir -p data/db_vol data/wp_vol data/portainer_data
 	docker-compose -f $(COMPOSE_FILE) up --build
 
 stop:
